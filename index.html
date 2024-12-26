@@ -210,55 +210,57 @@
             <div class="container contacts__container">
                 <div class="contacts__info">
                     <div class="contacts__headline">
-                        <h3>Contact us</h3>
-                        <p>We are responsible for maintaining and protecting the Personal Information under our control.</p>
+                        <h3 class="contacts__title">Contact us</h3>
+                        <p class="contacts__desc">We are responsible for maintaining and protecting the Personal Information under our control.</p>
                     </div>
                     <form class="contacts__form" action="">
                         <ul class="list contacts__list">
                             <li class="contacts__item">
-                                <label for="user-name">Name</label>
-                                <input type="text" id="user-name" name="user-name" placeholder="Alice Smith">
+                                <label class="contacts__label" for="user-name">Name</label>
+                                <input class="contacts_input" type="text" id="user-name" name="user-name" placeholder="Alice Smith">
                             </li>
                             <li class="contacts__item">
-                                <label for="user-phone">Telephone</label>
-                                <input type="tel" id="user-phone" name="user-phone" placeholder="+380...">
+                                <label class="contacts__label" for="user-phone">Telephone</label>
+                                <input class="contacts_input" type="tel" id="user-phone" name="user-phone" placeholder="+380...">
                             </li>
                             <li class="contacts__item">
-                                <label for="user-email">Email</label>
-                                <input type="email" id="user-email" name="user-email" placeholder="email@email.com">
+                                <label class="contacts__label" for="user-email">Email</label>
+                                <input class="contacts_input" type="email" id="user-email" name="user-email" placeholder="email@email.com">
                             </li>
                             <li class="contacts__item">
-                                <label for="user-comment">Comment</label>
-                                <textarea id="user-comment" name="user-comment" placeholder="Your comment" id="textarea"></textarea>
+                                <label class="contacts__label" for="user-comment">Comment</label>
+                                <textarea class="contacts_input" id="user-comment" name="user-comment" placeholder="Your comment" id="textarea"></textarea>
                             </li>
                         </ul>
-                        <button class="btn" type="submit">Send</button>
+                        <button class="btn contacts__button" type="submit">Send</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
+    <footer class="container">
+        <div class="footer__container">
             <a class="link" chref="./index.html">
-                <svg width="90" height="30">
+                <svg class="footer__logo" width="340" height="100">
                     <use href="./img/svg/symbol-defs.svg#icon-logo"></use>
                 </svg>
             </a>
-            <ul class="list">
-                <li>tel: +38 (063) 930 00 00</li>
-                <li>email: 3demail@email.com</li>
-                <li>address: Kyiv</li>
-            </ul>
-            <nav>
-                <ul class="list">
-                    <li><a class="link" href="#services">Services</a></li>
-                    <li><a class="link" href="">About us</a></li>
-                    <li><a class="link" href="/index.html">Home</a></li>
-                    <li><a class="link" href="#works">Projects</a></li>
-                    <li><a class="link" href="#contact_us">Contacts</a></li>
+            <div class="footer__contacts">
+                <ul class="list footer__list">
+                    <li>tel: +38 (063) 930 00 00</li>
+                    <li>email: 3demail@email.com</li>
+                    <li>address: Kyiv</li>
                 </ul>
-            </nav>
+                <nav>
+                    <ul class="list footer__navigation">
+                        <li><a class="link footer__link" href="#services">Services</a></li>
+                        <li><a class="link footer__link" href="">About us</a></li>
+                        <li><a class="link footer__link" href="/index.html">Home</a></li>
+                        <li><a class="link footer__link" href="#works">Projects</a></li>
+                        <li><a class="link footer__link" href="#contact_us">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div>
                 <uL class="list">
                     <li>

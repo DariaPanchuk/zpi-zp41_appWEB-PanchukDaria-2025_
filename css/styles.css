@@ -369,23 +369,115 @@ div {
 
 .contacts__headline {
     position: absolute;
+    left: 68%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__title {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+
+    margin-bottom: 340px;
+}
+
+.contacts__desc {
+    width: 256px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .contacts__form {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-end;
     width: 100%;
+
+    font-size: 24px;
 }
 
 .contacts__list {
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
-    max-width: 460px;
 }
 
 .contacts__item {
     display: flex;
     flex-direction: column;
+}
+
+.contacts__label {
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.contacts_input {
+    min-width: 460px;
+    padding: 9px 20px;
+    background-color: transparent;
+    border: 1px solid var(--main-text-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    color: var(--main-text-color);
+}
+
+.contacts_input:hover, 
+.contacts_input:focus {
+    outline: transparent;
+    border-width: 2px;
+    border-color: var(--accent-color);
+}
+
+.contacts__button {
+    padding: 12px 100px;
+    border-radius: 50px;
+
+    font-weight: 700;
+    font-size: 24px;
+
+    transition: background-color var(--anim);
+}
+
+.contacts__button:hover,
+.contacts__button:focus {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.contacts__item textarea {
+    height: 110px;
+}
+
+.footer__container {
+    display: flex;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.footer__logo {
+    fill: var(--main-text-color);
+    margin-right: 72px;
+}
+
+.footer__contacts {
+    display: flex;
+    align-items:flex-end;
+    gap: 120px;
+}
+
+.footer__list {
+    font-size: 18px;
+}
+
+.footer__navigation {
+    font-size: 20px;
+}
+
+.footer__link {
+    color: var(--main-text-color);
 }
