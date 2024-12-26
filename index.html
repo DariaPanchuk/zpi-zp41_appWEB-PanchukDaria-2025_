@@ -14,7 +14,7 @@
         <div class="container header__container">
             <div class="header__menu">
                 <a class="link" chref="./index.html">
-                    <svg class="header__logo" width="150" height="50">
+                    <svg id="logo" class="navigation__logo" width="150" height="50">
                         <use href="./img/svg/symbol-defs.svg#icon-logo"></use>
                     </svg>
                 </a>
@@ -124,31 +124,6 @@
         <section class="section" id="works">
             <div class="container">
                 <h2 class="section-title">Our works</h2>
-                <!-- <table>
-                    <tr>
-                        <th>Table Football</th>
-                        <th>Minimal Cactus Decoration</th>
-                        <th>Santa Gnome</th>
-                        <th>Pirate Kraken Dice Guardian</th>
-                        <th>Shell Flower Pot</th>
-                    </tr>
-                    <tr>
-                        <td><img src="./img/images/2024-10-29_0c64e9528820f.webp" alt="3D Table Football" width="300" height="200"></td>
-                        <td><img src="./img/images/2024-11-07_ce8e38e158c6.webp" alt="3D Cactus" width="300" height="200"></td>
-                        <td><img src="./img/images/2024-11-08_84ce058e50895.webp" alt="3D Santa Claus" width="300" height="200"></td>
-                        <td><img src="./img/images/2024-11-07_cf0e8cd7d54828.webp" alt="3D Octopus" width="300" height="200"></td>
-                        <td><img src="./img/images/2024-11-09_6f2162583973.webp" alt="3D Plant Pot" width="300" height="200"></td>
-                    </tr>
-                    <tr>
-                        <td>Dive into the world of tabletop sports with this compact, 3D-printed football table! Designed for easy assembly, it comes in two main parts that fit together seamlessly using hexagonal joints—no glue required.</td>
-                        <td>A stylized take on the iconic saguaro cactus, featuring clean vertical ribbing and characteristic arms. The bold,
-                        architectural design captures the essence of desert landscapes in a modern, minimalist way.</td>
-                        <td>Say hello to Santa Gnome! With his cozy hat and fluffy beard, he's ready to bring a touch of Christmas magic to your
-                        home. Perfect for adding a little holiday spirit!</td>
-                        <td>Cute Kraken Dice Guardian. Best results with AMS printing, only needs 4 colours. Some supports needed, but are easy to remove.</td>
-                        <td>High density model of Shell Flower pot. Format STL. Created in Blender. 2 Perimeters. 10% infill. No supports.</td>
-                    </tr>
-                </table> -->
                 <ul class="list works__list">
                     <li class="works__item"><img class="works__img" src="./img/images/2024-10-29_0c64e9528820f.webp" alt="3D Table Football" width="450"></li>
                     <li class="works__item"><img class="works__img" src="./img/images/2024-11-07_ce8e38e158c6.webp" alt="3D Cactus" width="450"></li>
@@ -240,46 +215,48 @@
     </main>
     <footer class="container">
         <div class="footer__container">
-            <a class="link" chref="./index.html">
-                <svg class="footer__logo" width="340" height="100">
-                    <use href="./img/svg/symbol-defs.svg#icon-logo"></use>
-                </svg>
-            </a>
-            <div class="footer__contacts">
-                <ul class="list footer__list">
-                    <li>tel: +38 (063) 930 00 00</li>
-                    <li>email: 3demail@email.com</li>
-                    <li>address: Kyiv</li>
-                </ul>
-                <nav>
-                    <ul class="list footer__navigation">
-                        <li><a class="link footer__link" href="#services">Services</a></li>
-                        <li><a class="link footer__link" href="">About us</a></li>
-                        <li><a class="link footer__link" href="/index.html">Home</a></li>
-                        <li><a class="link footer__link" href="#works">Projects</a></li>
-                        <li><a class="link footer__link" href="#contact_us">Contacts</a></li>
+            <div class="footer__main">
+                <a class="link footer__main-link" chref="./index.html">
+                    <svg class="footer__logo" width="240" height="80">
+                        <use href="./img/svg/symbol-defs.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <div class="footer__contacts">
+                    <ul class="list footer__list">
+                        <li>tel: +38 (063) 930 00 00</li>
+                        <li>email: 3demail@email.com</li>
+                        <li>address: Kyiv</li>
                     </ul>
-                </nav>
+                    <nav>
+                        <ul class="list footer__navigation">
+                            <li class="footer__nav-item"><a class="link footer__link" href="/index.html">Home</a></li>
+                            <li class="footer__nav-item"><a class="link footer__link" href="./logic.html">About us</a></li>
+                            <li class="footer__nav-item"><a class="link footer__link" href="#services">Services</a></li>
+                            <li class="footer__nav-item"><a class="link footer__link" href="#works">Projects</a></li>
+                            <li class="footer__nav-item"><a class="link footer__link" href="#contact_us">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div>
-                <uL class="list">
-                    <li>
-                        <a class="link" href="">
-                            <svg width="20" height="20">
+            <div class="footer__socials">
+                <uL class="list footer__socials">
+                    <li class="footer__socials-item">
+                        <a class="link footer__socials-link" href="">
+                            <svg width="38" height="38">
                                 <use href="./img/svg/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="link" href="">
-                            <svg width="20" height="20">
+                    <li class="footer__socials-item">
+                        <a class="link footer__socials-link" href="">
+                            <svg width="38" height="38">
                                 <use href="./img/svg/symbol-defs.svg#icon-telegram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="link" href="">
-                            <svg width="20" height="20">
+                    <li class="footer__socials-item">
+                        <a class="link footer__socials-link" href="">
+                            <svg width="38" height="38">
                                 <use href="./img/svg/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
